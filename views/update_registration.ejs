@@ -8,7 +8,7 @@
     <div class="container">
         <div class="box-nav d-flex justify-between">
            <div class="filter">
-               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Registrations</a>
            </div>
         </div>
         <div class="form-title text-center">
@@ -35,6 +35,18 @@
         <div class="form-group">
             <label for="aboutProduct" class="text-light">About Product</label>
             <input type="text" name="aboutProduct" value="<%= registrations.aboutProduct%>" placeholder="Description ..">
+        </div>
+
+        <div class="form-group">
+            <label for="productType" class="text-light">Product Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="productType" value="Consumable" <%= registrations.productType == 'Consumable' ? 'checked' : '' %> >
+                <label for="radio-2" class="radio-label">Consumable</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="productType" value="Non-Consumable" <%= registrations.productType == 'Non-Consumable' ? 'checked' : '' %> >
+                <label for="radio-3" class="radio-label">Non-Consumable</label>
+            </div>
         </div>
 
         <div class="form-group">

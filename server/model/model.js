@@ -17,6 +17,10 @@ var schema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    productType : {
+        type: String,
+        required: true,
+    }
 })
 
 const Registration = mongoose.model('registrations', schema);

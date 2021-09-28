@@ -1,6 +1,6 @@
  <!-- form handling -->
  <form action="/api/registrations" method="POST" id="add_registration">
-    <div class="new_user">
+    <div class="new_registration">
         <div class="form-group">
             <label for="brandName" class="text-light">Brand Name</label>
             <input type="hidden" name="id" value="">
@@ -18,30 +18,17 @@
             <label for="aboutProduct" class="text-light">About Product [250 characters]</label>
             <input type="text" name="aboutProduct" value="" placeholder="Description ..">
         </div>
-        <!-- <div class="form-group">
-            <label for="gender" class="text-light">Gender</label>
+        <div class="form-group">
+            <label for="productType" class="text-light">Product Type</label>
             <div class="radio inline">
-                <input type="radio" id="radio-2" name="gender" value="Male" >
-                <label for="radio-2" class="radio-label">Male</label>
+                <input type="radio" id="radio-2" name="productType" value="Consumable" >
+                <label for="radio-2" class="radio-label">Consumable</label>
             </div>
             <div class="radio inline">
-                <input type="radio" id="radio-3" name="gender" value="Female" >
-                <label for="radio-3" class="radio-label">Female</label>
+                <input type="radio" id="radio-3" name="productType" value="Non-Consumable" >
+                <label for="radio-3" class="radio-label">Non-Consumable</label>
             </div>
         </div>
-
-        <div class="form-group">
-            <label for="gender" class="text-light">Status</label>
-            <div class="radio inline">
-                <input type="radio" id="radio-4" name="status" value="Active" >
-                <label for="radio-4" class="radio-label">Active</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-5" name="status" value="Inactive" >
-                <label for="radio-5" class="radio-label">Inactive</label>
-            </div>
-        </div> -->
-
         <div class="form-group">
             <button type="submit" class="btn text-dark update">Save</button>
         </div>
