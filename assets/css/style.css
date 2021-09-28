@@ -16,6 +16,10 @@
 a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
+    background: linear-gradient(to right, #ff0000, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container{
@@ -66,7 +70,7 @@ a {
 }
 
 #header nav{
-    background-color: #06d6a0;
+    background-color: #9EE599;
     padding: 1em 0;
     width: 100%;
 }
@@ -90,21 +94,21 @@ table{
     width: 100%;
 }
 
-.table td, .table th{
+td, th{
     padding: .75em;
     vertical-align: top;
     text-align: center;
     border-top: 1px solid var(--border);
 }
 
-.table td > a.btn{
+td > a.btn{
     padding: .3em 1em;
     font-size: 1.1em;
     margin: 0 .2em;
 }
 
 .table tr:hover{
-    background-color:#06d6a0 ;
+    background-color:#9EE599 ;
 }
 
 .table tr:hover td > a{
@@ -116,7 +120,7 @@ table{
     background-color: var(--dark) ;
     border-color: #32383e;
 }
-
+/* 
 @media only screen and (max-width: 1024px){
     table, thead, tbody, th, td, tr{
         display: block;
@@ -135,9 +139,9 @@ table{
         position: relative;
     }
 
-}
+} */
 
-/*  add user & update user template */
+/*  registration template */
 .form-title{
     margin-top: 2em;
 }
@@ -146,7 +150,7 @@ table{
     padding: .5em 0;
 }
 
-.new_user{
+.new_registration{
     max-width: 786px;
     margin: auto;
 }
@@ -197,13 +201,13 @@ table{
 }
 
 .radio input[type='radio']:checked + .radio-label:before{
-    background-color: #16db93;
+    background-color: #000000;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type='radio']:focus + .radio-label:before{
     outline: none;
-    border-color:#16db93;
+    border-color:#9EE599;
 }
 
 .radio input[type='radio']:disabled + .radio-label:before{
@@ -216,10 +220,12 @@ table{
 #add_registration .form-group .btn{
     width: 100%;
     padding: .9em 1em;
-    background-color:#16db93; 
+    background-color: var(--dark);
+    color: var(--light);
     border: none;
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
+    font-weight: bold;
     cursor: pointer;
     border-radius: .2em;
     margin: .5em 0;
@@ -227,6 +233,6 @@ table{
 
 #update_registration .form-group .btn:hover,
 #add_registration .form-group .btn:hover{
-    background-color: var(--dark);
-    color: var(--border);
+    background-color: #9EE599;
+    color: var(--dark);
 }

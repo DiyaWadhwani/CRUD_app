@@ -1,6 +1,4 @@
 
-
-
 $("#add_registration").submit(function(event){
     alert("Registration completed Successfully!");
 })
@@ -39,7 +37,7 @@ if(window.location.pathname == "/"){
 
         if(confirm("Do you really want to delete this record?")){
             $.ajax(request).done(function(response){
-                alert("User Deleted Successfully!");
+                alert("Registration Deleted Successfully!");
                 location.reload();
             })
         }
